@@ -1,12 +1,15 @@
 {
     "uat":{
-        "baseUrl":"https://computer-database.gatling.io/"
+        "baseUrl":"https://computer-database.gatling.io/",
+        "userID":"uatUser"
     },
     "int":{
-        "baseUrl":"https://computer-database.gatling.io/"
+        "baseUrl":"https://computer-database.gatling.io/",
+        "userID":"intUser"
     },
     "qa":{
-        "baseUrl":"https://computer-database.gatling.io/"
+        "baseUrl":"https://computer-database.gatling.io/",
+        "userID":"qaUser"
     }
     
 }

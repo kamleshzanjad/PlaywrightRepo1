@@ -7,7 +7,8 @@ export class HomePage {
     readonly filterByComputerName: Locator;
     readonly filterByName: Locator;
     readonly listOfComputerName: Locator;
-    readonly addANewComputer: Locator
+    readonly addANewComputer: Locator;
+    readonly alertMessage: Locator;
 
 
     constructor(page: Page) {
@@ -17,7 +18,8 @@ export class HomePage {
         this.filterByComputerName = page.getByPlaceholder("Filter by computer name...", { exact: true });
         this.filterByName = page.getByRole("button", { name: "Filter by name" });
         this.listOfComputerName = page.locator("xpath=//section[@id='main']/table/tbody/tr/td[1]")
-        this.addANewComputer = page.locator("a", { hasText: "Add a new computer" })
+        this.addANewComputer = page.locator("a", { hasText: "Add a new computer" });
+        this.alertMessage= page.locator("//section[@id='main']/div[1]")
     }
 
     async openApplication(url:string){
@@ -45,6 +47,10 @@ export class HomePage {
 
     async clickAddANewComputer(){
         await this.addANewComputer.click()
+    }
+
+    async getAlertMessage(){
+        return await this.alertMessage.textContent()
     }
 
 

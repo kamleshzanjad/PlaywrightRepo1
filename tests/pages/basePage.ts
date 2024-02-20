@@ -20,5 +20,13 @@ export class BasePage {
         }
     }
 
+    async setElementText(loc, text){
+        await this.page.locator(loc).fill(text);
+    }
+
+    async clickElement(loc){
+        await this.page.locator(loc).click();
+    }
+
 
 }
