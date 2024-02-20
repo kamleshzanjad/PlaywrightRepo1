@@ -1,0 +1,16 @@
+{
+  "name": "playwrightproject",
+  "version": "1.0.0",
+  "description": "POM with Typescript and Playwright automation on application Computer Database",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project=chromium",
+    "report": "npx playwright show-report"
+  },
+  "author": "kamleshzanjad",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.41.2",
+    "@types/node": "20.11.19"
+  }
+}

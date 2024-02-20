@@ -1,0 +1,14 @@
+{
+    "TC01": {
+        "SearchText": "Acer Extensa 5220",
+        "expectedMessage": "One computer found"
+    },
+    "TC02": {
+        "SearchText": "ACE",
+        "expectedMessage": "computers found"
+    },
+    "TC03": {
+        "SearchText": "Acer Extensa 5220 TTT",
+        "expectedMessage": "No computer"
+    }
+}

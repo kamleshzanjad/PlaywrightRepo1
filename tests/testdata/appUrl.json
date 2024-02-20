@@ -1,0 +1,12 @@
+{
+    "uat":{
+        "baseUrl":"https://computer-database.gatling.io/"
+    },
+    "int":{
+        "baseUrl":"https://computer-database.gatling.io/"
+    },
+    "qa":{
+        "baseUrl":"https://computer-database.gatling.io/"
+    }
+    
+}
